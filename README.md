@@ -4,10 +4,9 @@
 
 dependencies: gcloud 
 
-export VERTEX_PROJECT_ID="<PROJECT_ID>"  
-export VERTEX_REGION="<REGION_ID>" 
-
-gcloud auth application-default login 
+Environment Variables  
+`export VERTEX_PROJECT_ID="<PROJECT_ID>"`  
+`export VERTEX_REGION="<REGION>"` 
 
 ### GCP Prerequisites  
 Before running the script, ensure your Google Cloud environment is configured: 
@@ -21,12 +20,16 @@ Before running the script, ensure your Google Cloud environment is configured:
 
 ### Installation
 
+https://docs.cloud.google.com/sdk/docs/install-sdk  
+
 1. Clone the repository and make the script executable:  
    `chmod +x prompt.py`  
 2. Install the required Python package (using a virtual environment is recommended on newer Linux distributions):  
    `python3 -m venv venv`  
    `source venv/bin/activate`  
    `pip install vertexai` 
+3. Authenicate with gcloud:
+   `gcloud auth application-default login`
 
 ------------------------------------------------------------------------- 
 
