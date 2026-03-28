@@ -14,7 +14,7 @@ Talk to Gemini from the CLI.
 positional arguments:
   prompt             input text 
 
-options: 
+options:  
   -h, --help         show this help message and exit  
   -f, --file FILE    Path to a file (text, image, pdf, etc.)  
   -m, --model MODEL  The Gemini model to use (default: gemini-2.5-pro)  
