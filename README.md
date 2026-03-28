@@ -1,6 +1,8 @@
 # prompt
 
-dependencies: gcloud, vertexai 
+### Talk to Gemini from the CLI using the Vertex AI API. 
+
+dependencies: gcloud 
 
 export VERTEX_PROJECT_ID="<PROJECT_ID>"  
 export VERTEX_REGION="<REGION_ID>" 
@@ -28,19 +30,7 @@ Before running the script, ensure your Google Cloud environment is configured:
 
 ------------------------------------------------------------------------- 
 
-usage: prompt.py [-h] [-f FILE] [-m MODEL] [prompt ...] 
-
-Talk to Gemini from the CLI. 
-
-positional arguments:
-  prompt             input text 
-
-options:  
-  -h, --help         show this help message and exit  
-  -f, --file FILE    Path to a file (text, image, pdf, etc.)  
-  -m, --model MODEL  The Gemini model to use (default: gemini-2.5-pro)  
-
--------------------------------------------------------------------------- 
+usage: prompt.py [-h] [-f FILE] [-m MODEL] [prompt ...]  
 
 example: ./prompt.py -f <file_path>  
 example: ./prompt.py -f <file_path> <input_text>  
