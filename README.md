@@ -1,9 +1,11 @@
 # prompt
 
-dependencies: vertexai 
+dependencies: gcloud, vertexai 
 
 export VERTEX_PROJECT_ID="<PROJECT_ID>"  
 export VERTEX_REGION="<REGION_ID>" 
+
+gcloud auth application-default login
 
 -------------------------------------------------------------------------- 
 
