@@ -44,4 +44,4 @@ options:
 
 example: ./prompt.py -f <file_path>  
 example: ./prompt.py -f <file_path> <input_text>  
-example: ./prompt.py -m <model> -f <file_path> <input_text>
+example: ./prompt.py -m <desired_model> -f <file_path> <input_text>
