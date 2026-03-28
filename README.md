@@ -5,7 +5,15 @@ dependencies: gcloud, vertexai
 export VERTEX_PROJECT_ID="<PROJECT_ID>"  
 export VERTEX_REGION="<REGION_ID>" 
 
-gcloud auth application-default login
+gcloud auth application-default login 
+
+### GCP Prerequisites  
+Before running the script, ensure your Google Cloud environment is configured: 
+
+1. **Active Project:** You must have a GCP Project with an active billing account.  
+2. **Enable the API:** Enable the Vertex AI API for your project. You can do this in the web console or by running:  
+   `gcloud services enable aiplatform.googleapis.com`  
+3. **IAM Permissions:** Your Google account needs the **Vertex AI User** role to generate content.  
 
 -------------------------------------------------------------------------- 
 
