@@ -13,12 +13,11 @@ Before running the script, ensure your Google Cloud environment is configured:
 2. **Enable the API:** Enable the Vertex AI API for your project. You can do this in the web console or by running:  
    `gcloud services enable aiplatform.googleapis.com`  
 3. **IAM Permissions:** Your Google account needs the **Vertex AI User** role to generate content.  
+4. **gcloud:** https://docs.cloud.google.com/sdk/docs/install-sdk  
 
 -------------------------------------------------------------------------- 
 
 ### Installation
-
-https://docs.cloud.google.com/sdk/docs/install-sdk  
 
 1. Clone the repository and make the script executable:  
    `chmod +x prompt.py`  
