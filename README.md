@@ -2,10 +2,6 @@
 
 ### Talk to Gemini from the CLI using the Vertex AI API. 
 
-## Environment Variables  
-`export VERTEX_PROJECT_ID="<PROJECT_ID>"`  
-`export VERTEX_REGION="<REGION>"` 
-
 ### GCP Prerequisites  
 Before running the script, ensure your Google Cloud environment is configured: 
 
@@ -26,7 +22,13 @@ Before running the script, ensure your Google Cloud environment is configured:
    `source venv/bin/activate`  
    `pip install vertexai` 
 3. Authenicate with gcloud:  
-   `gcloud auth application-default login`
+   `gcloud auth application-default login` 
+
+------------------------------------------------------------------------- 
+
+**Environment Variables**  
+`export VERTEX_PROJECT_ID="<PROJECT_ID>"`  
+`export VERTEX_REGION="<REGION>"` 
 
 ------------------------------------------------------------------------- 
 
