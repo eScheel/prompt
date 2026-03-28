@@ -2,6 +2,8 @@
 
 ### Talk to Gemini from the CLI using the Vertex AI API. 
 
+-------------------------------------------------------------------------- 
+
 ### GCP Prerequisites  
 Before running the script, ensure your Google Cloud environment is configured: 
 
