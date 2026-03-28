@@ -17,6 +17,17 @@ Before running the script, ensure your Google Cloud environment is configured:
 
 -------------------------------------------------------------------------- 
 
+### Installation
+
+1. Clone the repository and make the script executable:  
+   `chmod +x prompt.py`  
+2. Install the required Python package (using a virtual environment is recommended on newer Linux distributions):  
+   `python3 -m venv venv`  
+   `source venv/bin/activate`  
+   `pip install vertexai` 
+
+------------------------------------------------------------------------- 
+
 usage: prompt.py [-h] [-f FILE] [-m MODEL] [prompt ...] 
 
 Talk to Gemini from the CLI. 
