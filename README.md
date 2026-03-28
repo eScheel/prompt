@@ -2,9 +2,7 @@
 
 ### Talk to Gemini from the CLI using the Vertex AI API. 
 
-dependencies: gcloud 
-
-Environment Variables  
+## Environment Variables  
 `export VERTEX_PROJECT_ID="<PROJECT_ID>"`  
 `export VERTEX_REGION="<REGION>"` 
 
@@ -28,13 +26,13 @@ https://docs.cloud.google.com/sdk/docs/install-sdk
    `python3 -m venv venv`  
    `source venv/bin/activate`  
    `pip install vertexai` 
-3. Authenicate with gcloud:
+3. Authenicate with gcloud:  
    `gcloud auth application-default login`
 
 ------------------------------------------------------------------------- 
 
-usage: prompt.py [-h] [-f FILE] [-m MODEL] [prompt ...]  
+### usage: prompt.py [-h] [-f FILE] [-m MODEL] [prompt ...]  
 
-example: ./prompt.py -f <file_path>  
-example: ./prompt.py -f <file_path> <input_text>  
-example: ./prompt.py -m <desired_model> -f <file_path> <input_text>
+example: `./prompt.py -f <file_path>`  
+example: `./prompt.py -f <file_path> <input_text>`  
+example: `./prompt.py -m <desired_model> -f <file_path> <input_text>`
