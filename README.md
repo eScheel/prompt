@@ -2,7 +2,7 @@
 
 dependencies: vertexai 
 
-export VERTEX_PROJECT_ID="<PROJECT_ID>" 
+export VERTEX_PROJECT_ID="<PROJECT_ID>"  
 export VERTEX_REGION="<REGION_ID>" 
 
 -------------------------------------------------------------------------- 
