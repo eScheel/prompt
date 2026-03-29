@@ -38,4 +38,4 @@ Before running the script, ensure your Google Cloud environment is configured:
 
 example: `./prompt.py -f <file_path>`  
 example: `./prompt.py -f <file_path> <input_text>`  
-example: `./prompt.py -m <desired_model> -f <file_path> <input_text>`
+example: `./prompt.py -m <model_id> -f <file_path> <input_text>`
