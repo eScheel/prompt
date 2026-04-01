@@ -80,7 +80,7 @@ if __name__ == "__main__":
     # ---------------------------------------------------------
     # If final_prompt is completely empty...
     if not final_prompt.strip():
-        # ...but we provided a binary file (like an image)...
+        # ...but we provided a file...
         if file_part:
             # Give the model a generic instruction so it doesn't crash from an empty text prompt
             final_prompt = "Please analyze and describe this file."
@@ -93,13 +93,12 @@ if __name__ == "__main__":
     # 4. API COMMUNICATION & STREAMING
     # ---------------------------------------------------------
     # Dynamically inject the chosen model name into the print statement
+    print("============================================")
     print(f"Contacting the {args.model} model and generating a response ...")
     print("============================================")
     
     # Authenticate and set parameters and select a model.
     vertexai.init(project=PROJECT_ID, location=REGION)
-    
-    # Pass the argument dynamically instead of hardcoding it
     model = GenerativeModel(args.model)
     
     try:
