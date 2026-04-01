@@ -36,6 +36,18 @@ Before running the script, ensure your Google Cloud environment is configured:
 
 ### usage: prompt.py [-h] [-f FILE] [-m MODEL] [prompt ...]  
 
+example: `./prompt.py <input_text>`  
 example: `./prompt.py -f <file_path>`  
 example: `./prompt.py -f <file_path> <input_text>`  
-example: `./prompt.py -m <model_id> -f <file_path> <input_text>`
+example: `./prompt.py -m <model_id> -f <file_path> <input_text>` 
+
+------------------------------------------------------------------------ 
+
+**INFO** 
+
+You may run into the following errors when invoking the script:  
+`env: ‘python3\r’: No such file or directory`  
+`env: use -[v]S to pass options in shebang lines`  
+This is because of how Windows handles Line feeds different from UNIX/Linux. 
+
+To fix this you will need to run a program against the script such as `dos2unix` which should be easily downloadable via built-in package manager.
